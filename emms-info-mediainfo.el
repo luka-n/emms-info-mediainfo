@@ -98,6 +98,8 @@ This function is intended to be added to the
         (dolist (property
                  `((info-artist "Performer")
                    (info-artist "TCOM")
+                   (info-albumartist "TPE2")
+                   (info-albumartist "Album/Performer")
                    (info-title "Track name")
                    (info-title "TIT2")
                    (info-album "Album")
@@ -111,6 +113,10 @@ This function is intended to be added to the
                     "TYER" ,#'emms-info-mediainfo-parse-year)
                    (info-year
                     "TDAT" ,#'emms-info-mediainfo-parse-year)
+                   (info-originalyear
+                    "Original/Released date" ,#'emms-info-mediainfo-parse-year)
+                   (info-originalyear
+                    "TDOR"                   ,#'emms-info-mediainfo-parse-year)
                    (info-tracknumber "Track name/Position")
                    (info-tracknumber "TRCK")
                    (info-genre "Genre")
